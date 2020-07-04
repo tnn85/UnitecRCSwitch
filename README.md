@@ -1,6 +1,6 @@
-# Arduino Unitec Remote Control Switch Library
-https://github.com/tnn85/UnitecRCSwitch 
-README file  
+# Unitec remote control switch Arduino library
+Switch Unitec 433Mhz remote controlled sockets
+https://github.com/tnn85/UnitecRCSwitch   
 
 ## License
 Arduino Button Library Copyright (C) 2020 Till Nenz GNU GPL v3.0
@@ -20,12 +20,14 @@ Furthermore the sender uses a rolling code (each button sends 4 different codes 
 
 Nevertheless the rolling code was implemented in this library nevertheless.
 
-In order to send the right codes the codes for each button has to be sniffed with the rc-switch library "ReceiveDemo_Simple.ino" sketch and a 433Mhz receiver hooked up to the interrupt pin of an Arduino.
+In order to send the right codes which are accepted by your particular device, the codes for each button have to be sniffed with the "rc-switch" library (https://github.com/sui77/rc-switch) "ReceiveDemo_Simple.ino" example sketch and a 433Mhz receiver hooked up to the interrupt 0 pin of an Arduino (e.g. for Arduino Nano pin 2).
 
-The data structure "ButtonCodes" can be used to store the received codes and passed to the library.
+The data structure "ButtonCodes" hast to be defined in your sketch (see SimpleOnOff example) and the received codes  have to be stored in it and passed to the library.
+
+In contrast to "rc-switch" library setBtnCodes(ButtonCodes \*codes) has to be called
 
 ## Examples
-The following example sketches are included with the **Unitec Remote Control Switch** library:
+The following example sketches are included with the **UnitecRCSwitch** library:
 
 - **SimpleOnOff**: Uses pin 11 to turn on and off a wall socket with Button A codes.
 
