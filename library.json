@@ -12,8 +12,6 @@
     "url": "https://github.com/tnn85/UnitecRCSwitch.git"
   },
   "version": "1.0.0",
-  "frameworks": [
-        "arduino"
-  ],
+  "frameworks": "arduino",
   "platforms": "*"
 }
