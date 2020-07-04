@@ -1,5 +1,5 @@
 # Arduino Unitec Remote Control Switch Library
-https://github.com/tnn85/Unitec_RC-Switch  
+https://github.com/tnn85/UnitecRCSwitch 
 README file  
 
 ## License
